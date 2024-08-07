@@ -1,10 +1,13 @@
+import Link from 'next/link'
 import React from 'react'
+
 
 const Sign_In = () => {
   return (
-    <div className='max-w-[40%] mx-auto '>
+    <div className='border border-4 max-w-[30%] mx-auto mt-24 rounded-3xl  '>
+    <div className=' '>
         <>
-  <div className="w-full max-w-full px-3 mx-auto mt-0 md:flex-0 shrink-0">
+  <div className="w-full max-w-full px-3 mx-auto mt-0 md:flex-0 shrink-0 " >
     <div className="relative z-0 flex flex-col min-w-0 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
       <div className="p-6 mb-0  text-center bg-white border-b-0 rounded-t-2xl">
         <h5>Register with</h5>
@@ -161,12 +164,12 @@ const Sign_In = () => {
           </div>
           <p className="mt-4 mb-0 leading-normal text-sm">
             Already have an account?{" "}
-            <a
+            <Link
               className="font-bold text-slate-700"
-              href="../pages/sign-in.html"
+              href="../signin"
             >
               Sign in
-            </a>
+            </Link>
           </p>
         </form>
       </div>
@@ -174,6 +177,7 @@ const Sign_In = () => {
   </div>
 </>
 
+    </div>
     </div>
   )
 }
