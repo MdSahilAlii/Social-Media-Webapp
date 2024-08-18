@@ -1,27 +1,31 @@
+import Link from 'next/link'
 import React from 'react'
 
 const SignIn = () => {
   return (
-    <div>
+    <div >
 
 <div className="min-h-screen bg-gray-100 flex flex-col justify-center sm:py-12">
-  <div className="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
+  <div className="p-10  xs:p-0 mx-auto md:w-full md:max-w-md">
     <h1 className="font-bold text-center text-2xl mb-5">Your Logo</h1>
-    <div className="bg-white shadow w-full rounded-lg divide-y divide-gray-200 ">
+    <div className="bg-white  shadow w-full rounded-lg divide-y divide-gray-200 ">
       <div className="px-5 py-7">
-        <label className="font-semibold text-sm text-gray-600 pb-1 block">
-          E-mail
+        <label className="font-semibold text-sm text-gray-600 pb-1 block mt-5" 
+        >
+          Email
         </label>
         <input
           type="text"
-          className="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+          className="border rounded-lg text-center px-3 py-2 mt-1 mb-5 text-sm w-full"
+          placeholder='Enter your Email'
         />
         <label className="font-semibold text-sm text-gray-600 pb-1 block">
           Password
         </label>
         <input
           type="text"
-          className="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
+          className="border rounded-lg text-center px-3 py-2 mt-1 mb-5 text-sm w-full"
+          placeholder='Enter your Password'
         />
         <button
           type="button"
@@ -127,7 +131,11 @@ const SignIn = () => {
                 d="M10 19l-7-7m0 0l7-7m-7 7h18"
               />
             </svg>
-            <span className="inline-block ml-1">Back to your-app.com</span>
+            <span className="inline-block ml-1">
+              <Link href="/">
+              Back to your-app.com
+              </Link>
+              </span>
           </button>
         </div>
       </div>
