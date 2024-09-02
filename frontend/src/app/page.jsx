@@ -1,43 +1,17 @@
 import React from 'react'
 import SideBar from '../components/SideBar'
+import Header from '../components/Header'
+import Navbar from '@/components/Navbar'
+
 
 const Home_page = () => {
   return (
     <div className='home'>
       {/* <SideBar/> */}
-      <>
-  <header>
-    <nav>
-      <div className="logo">
-        <h1>SocialConnect</h1>
-      </div>
-      <ul className="nav-links">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Profile</a>
-        </li>
-        <li>
-          <a href="#">Messages</a>
-        </li>
-        <li>
-          <a href="#">Notifications</a>
-        </li>
-        <li>
-          <a href="#">Settings</a>
-        </li>
-      </ul>
-      <div className="login-signup">
-        <a href="#" className="btn login">
-          Login
-        </a>
-        <a href="#" className="btn signup">
-          Sign Up
-        </a>
-      </div>
-    </nav>
-  </header>
+      <Header/>
+      {/* <Navbar/> */}
+      
+  
   <section className="hero">
     {/* <div className='image'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde consequatur mollitia officiis, placeat ut a hic sit non possimus nobis maxime doloribus exercitationem?</div> */}
     
@@ -70,7 +44,7 @@ const Home_page = () => {
     <p>© 2024 SocialConnect. All rights reserved.</p>
   </footer>
   {/* Font Awesome for Icons */}
-</>
+
 
  
     
